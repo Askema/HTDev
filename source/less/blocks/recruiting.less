@@ -1,0 +1,19 @@
+.recruiting__list {
+  .ul();
+  position: relative;
+}
+
+.recruiting__item {
+  padding-left: 19px;
+
+  &::before {
+    .pseudo(@content: "—");
+    font-weight: 700;
+    left: 0;
+    color: #5164ac;
+
+    @media (min-width: @desktop-width) {
+      font-size: 16px;
+    }
+  }
+}
